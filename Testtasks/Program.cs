@@ -9,9 +9,9 @@ namespace Testtasks
         {
             Console.Clear();
             Console.WriteLine("Hello!");
-            //Luua N elemendiga massiiv ning trükkida see välja. Vahetada massiivi väärtuste järjekord vastupidiseks Reverse() funtsiooni kasutamata. Trükkida tulemus
+            //Luua N elemendiga massiiv ning trükkida see välja. Vahetada massiivi väärtuste järjekord vastupidiseks Reverse() funtsiooni kasutamata. Trükkida tulemus.
             int[] mass = {1,2,3};
-            Console.WriteLine("These are all the elements in mass array: ");
+            Console.WriteLine("These are all the elements in the mass array: ");
             foreach (int i in mass)
             {
                 Console.WriteLine(i);
@@ -23,13 +23,13 @@ namespace Testtasks
                 massrev[index] = mass[i];
                 index++;
             }
-            Console.WriteLine("These are all the elements in mass array in reverse order: ");
+            Console.WriteLine("These are all the elements in the mass array in reverse order: ");
             foreach(int r in massrev)
             {
                 Console.WriteLine(r);
             }
 
-            //Luua 2D maatriks, algväärtustada see ning trükkida kõik väärtused välja ridade kaupa (iga väärtus eraldi väljundi real)
+            //Luua 2D maatriks, algväärtustada see ning trükkida kõik väärtused välja ridade kaupa (iga väärtus eraldi väljundi real).
             int[][] matr;
             matr = new int[3][];
             matr[0] = new int[3] { 1, 2, 3 };
@@ -37,7 +37,7 @@ namespace Testtasks
             matr[2] = new int[4] { 1, 2, 3, 4 };
             for (int i=0;i<matr[0].Length;i++)
             {
-                Console.WriteLine("These are the elements of the {0}. subarray:",(i+1));
+                Console.WriteLine("These are the elements of the {0}. subarray of the 2D int array:",(i+1));
                 for(int j = 0; j < matr[i].Length; j++)
                 {
                     Console.WriteLine(matr[i][j]);
@@ -52,7 +52,7 @@ namespace Testtasks
             };
             for (int i = 0; i < smatr.GetLength(0); i++)
             {
-                Console.WriteLine("These are the elements of the {0}. subarray of the string matrix:",(i+1));
+                Console.WriteLine("These are the elements of the {0}. subarray of the 2D string matrix:",(i+1));
                 for (int j=0;j<smatr.GetLength(1);j++)
                 {
                     Console.WriteLine(smatr[i,j]);
@@ -108,9 +108,6 @@ namespace Testtasks
                 Console.WriteLine("The list is empty.");
                 Console.WriteLine("Bye!");
             }
-            
-            
-
         }
     }
 }
